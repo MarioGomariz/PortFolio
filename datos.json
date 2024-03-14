@@ -1,0 +1,61 @@
+{
+  "informacion_personal": {
+    "nombre": "Mario",
+    "apellido": "Gomariz",
+    "descripcion": "Empecé con la programación con C++ en los estudios secundarios para programar arduinos. Desde ese momento supe que quería dedicarme a esto.\n\nActualmente estoy en mi último año de una carrera de Desarrollo de Software. Donde eh aprendido cosas como Python, MySQL, Node, React y Js.\n\n Tambien colabore en varios trabajos como SinergiaRH-Digital y Fairway Indoor Golf, actualmente estoy trabajando junto con un equipo de programadores en la consultora SinergiaRH-Digital.",
+    "links": {
+      "Github": "https://github.com/MarioGomariz",
+      "Linkedin": "https://www.linkedin.com/in/mario-gomariz/",
+      "Instagram": "https://www.instagram.com/mariogomariz01/",
+      "CV": "cvv",
+      "Email": "mailto:m.gomariz01@gmail.com"
+    }
+  },
+  "tecnologias": {
+    "frontend": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "tailwind",
+      "sass",
+      "typescript"
+    ],
+    "back": ["node", "mysql", "nextjs"],
+    "tools": ["git", "github", "vec", "figma"]
+  },
+  "proyectos": {
+    "p1": {
+      "nombre": "SINERGIARH-DIGITAL",
+      "descripcion": "Empresa con login y sistema CRUD en todo el sitio.",
+      "img": "sinergia",
+      "tecnologias": ["React.js", "Node.js", "MySQL"],
+      "link": "https://sinergiarh-digital.com/",
+      "tipo": "trabajo"
+    },
+    "p2": {
+      "nombre": "To-Do",
+      "descripcion": "Para anotar tus tareas o cosas rapidas",
+      "img": "todo",
+      "tecnologias": ["React.js", "Tailwind"],
+      "link": "https://mariogomariz-to-do.vercel.app/",
+      "tipo": "proyecto"
+    },
+    "p3": {
+      "nombre": "Fairway Indoor Golf",
+      "descripcion": "Empresa de golf con login, reservas y sistema de pago.",
+      "img": "fairway",
+      "tecnologias": ["React.js", "Node.js", "MySQL", "Stripe"],
+      "link": "https://fairwayreservation.com/",
+      "tipo": "trabajo"
+    },
+    "p4": {
+      "nombre": "E-commerce",
+      "descripcion": "Ejemplo de una pagina de e-commerce",
+      "img": "carrito",
+      "tecnologias": ["HTML", "CSS", "JS"],
+      "link": "https://ecommerce-mariogomariz.vercel.app/",
+      "tipo": "proyecto"
+    }
+  }
+}

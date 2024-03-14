@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #0d0d0d;
+  --gray: #1c1e23;
+  --white: #f5f5f7;
+  --red: #D81F26;
+}
+
+body {
+  background-color: var(--black);
+}
+
+span,
+p,
+h1,
+h2,
+h3 {
+  color: var(--white);
+}
