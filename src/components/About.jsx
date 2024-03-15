@@ -1,4 +1,5 @@
 import { informacion_personal } from "../../datos.json";
+import { motion } from "framer-motion";
 import {
   FaLinkedin,
   FaGithub,
@@ -13,7 +14,10 @@ function About() {
   const { nombre, apellido, descripcion, links } = informacion_personal;
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7 }}
       className="rounded-3xl p-6 gap-3 border-2 col-span-8 md:col-span-4 md:row-span-3  bg-Cgray"
       style={{ opacity: "1", transform: "none" }}
     >
@@ -29,8 +33,9 @@ function About() {
         <div className="flex flex-wrap justify-center">
           {links &&
             Object.keys(links).map((link, key) => (
-              <a
+              <motion.a
                 key={key}
+                whileHover={{ scale: 1.1 }}
                 className="mt-2 md:mt-10 mx-1 flex items-center justify-center p-2 rounded-lg cursor-pointer bg-Cwhite text-Cblack hover:bg-Cblue"
                 href={links[link] === "cvv" ? cv : links[link]}
                 target="_blank"
@@ -44,11 +49,11 @@ function About() {
                 {link === "CV" && <FaDownload />}
                 {link === "Instagram" && <FaInstagram />}
                 <span className="mx-1 text-Cblack font-bold">{link}</span>
-              </a>
+              </motion.a>
             ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

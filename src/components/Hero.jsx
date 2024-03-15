@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import img from "../assets/bg.webp";
 
 function Hero() {
   return (
     <section className="bg-red w-full grid auto-rows-[172px]">
-      <div className="row-span-2 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden gap-10 justify-end p-6  md:col-span-4 md:items-end md:flex-row  md:p-10">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7 }}
+        className="row-span-2 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden gap-10 justify-end p-6  md:col-span-4 md:items-end md:flex-row  md:p-10"
+      >
         <img
           src={img}
           alt=""
@@ -16,7 +22,7 @@ function Hero() {
             Desarrollador Front-end
           </span>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

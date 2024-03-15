@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
 import { proyectos } from "../../datos.json";
 
@@ -31,7 +32,10 @@ const TarjetaProyecto = ({ proyecto }) => {
       : "w-fill h-44 md:w-56 md:h-36 md:self-end";
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.7 }}
       className={`rounded-3xl p-6 gap-3 border-2 col-span-8 md:col-span-4 ${tarjetaClases} bg-Cgray`}
       style={{ opacity: "1", transform: "none" }}
     >
@@ -39,7 +43,8 @@ const TarjetaProyecto = ({ proyecto }) => {
         <div className="flex flex-col gap-1">
           <div className="flex justify-between items-center">
             <h3 className="text-2xl font-bold">{proyecto.nombre}</h3>
-            <a
+            <motion.a
+              whileHover={{ scale: 1.5 }}
               className="p-2 border-2 rounded-full cursor-pointer  text-Cwhite hover:text-Cblue hover:border-Cblue"
               href={proyecto.link}
               target="_blank"
@@ -47,7 +52,7 @@ const TarjetaProyecto = ({ proyecto }) => {
               title="Ver más"
             >
               <MdArrowOutward />
-            </a>
+            </motion.a>
           </div>
           <p className="text-base opacity-30">{proyecto.descripcion}</p>
           <div className="flex items-center gap-2 opacity-60 font-medium">
@@ -58,14 +63,13 @@ const TarjetaProyecto = ({ proyecto }) => {
             ))}
           </div>
         </div>
-        
 
         <div
           className={`rounded-3xl ${img} bg-cover`}
           style={{ backgroundImage: `url(${getImageSrc(proyecto.img)})` }}
         ></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
