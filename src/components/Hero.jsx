@@ -18,7 +18,7 @@ function Hero() {
 
         <div className="w-full flex flex-col z-[2] absolute left-0 bottom-0 leading-4 p-5">
           <span className="text-5xl font-bold leading-7">Mario Gomariz</span>
-          <span className="text-2xl font-medium leading-9">
+          <span className="text-1xl md:text-2xl font-medium leading-9">
             Desarrollador Web Full Stack Junior
           </span>
         </div>
