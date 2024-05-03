@@ -22,11 +22,11 @@ const renderIcon = (tech) => {
     case "mysql":
       return "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg";
     case "nextjs":
-      return "https://upload.wikimedia.org/wikipedia/commons/b/ba/Tabler-icons_brand-nextjs.svg";
+      return "https://www.svgrepo.com/show/354113/nextjs-icon.svg";
     case "git":
       return "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg";
     case "github":
-      return "https://icons8.com/icon/106562/github";
+      return "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg";
     case "vec":
       return "https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg";
     case "figma":
