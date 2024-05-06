@@ -1,41 +1,6 @@
 import { tecnologias } from "../../datos.json";
 import { motion } from "framer-motion";
 
-const renderIcon = (tech) => {
-  switch (tech) {
-    case "html":
-      return "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg";
-    case "css":
-      return "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg";
-    case "js":
-      return "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg";
-    case "react":
-      return "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg";
-    case "tailwind":
-      return "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg";
-    case "sass":
-      return "https://www.svgrepo.com/show/374061/sass.svg";
-    case "typescript":
-      return "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg";
-    case "node":
-      return "https://www.svgrepo.com/show/355140/node.svg";
-    case "mysql":
-      return "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg";
-    case "nextjs":
-      return "https://www.svgrepo.com/show/354113/nextjs-icon.svg";
-    case "git":
-      return "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg";
-    case "github":
-      return "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg";
-    case "vec":
-      return "https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg";
-    case "figma":
-      return "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg";
-    default:
-      return null;
-  }
-};
-
 function Tecnologias() {
   return (
     <>
@@ -54,8 +19,8 @@ function Tecnologias() {
               {techArray.map((tech, index) => (
                 <div key={index}>
                   <img
-                    className="w-14 h-14"
-                    src={renderIcon(tech)}
+                    className={`w-14 h-14 ${tech.includes("nextjs") || tech.includes("GitHub") ? "dark:invert" : ""} `}
+                    src={tech}
                     alt={tech}
                     title={tech}
                   />

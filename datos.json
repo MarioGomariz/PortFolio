@@ -13,16 +13,25 @@
   },
   "tecnologias": {
     "frontend": [
-      "html",
-      "css",
-      "js",
-      "react",
-      "tailwind",
-      "sass",
-      "typescript"
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+      "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg",
+      "https://www.svgrepo.com/show/374061/sass.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
     ],
-    "back": ["node", "mysql", "nextjs"],
-    "tools": ["git", "github", "vec", "figma"]
+    "back": [
+      "https://www.svgrepo.com/show/355140/node.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
+      "https://www.svgrepo.com/show/354113/nextjs-icon.svg"
+    ],
+    "tools": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Visual_Studio_Code_1.18_icon.svg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+    ]
   },
   "proyectos": {
     "p1": {
